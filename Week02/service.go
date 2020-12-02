@@ -10,8 +10,10 @@ func CommentsService(id string) ([]Comment, error) {
 		if errors.As(err, &e) {
 			return []Comment{}, nil
 		}
+
 		return nil, err
 	}
+
 	return c, nil
 }
 
@@ -21,5 +23,6 @@ func BalanceService(id string) (*Balance, error) {
 		// log
 		return nil, err
 	}
+
 	return b, nil
 }

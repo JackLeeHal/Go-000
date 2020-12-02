@@ -30,6 +30,7 @@ func GetComments(id string) ([]Comment, error) {
 			cause: ErrNoRows,
 		}
 	}
+
 	return comments, nil
 }
 
@@ -41,5 +42,6 @@ func GetBalance(id string) (*Balance, error) {
 			cause: ErrNoRows,
 		}
 	}
+
 	return balance, nil
 }
